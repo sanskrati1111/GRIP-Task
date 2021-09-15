@@ -1,0 +1,191 @@
+
+
+
+#a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #ddd;
+    background: #1C2833;
+    font-size: 16px;
+    margin: 20px;
+    letter-spacing: 0.7em;
+    border-radius: 2px
+}
+
+#a p {
+    position: absolute;
+    display: block;
+    background: #FF5722
+}
+
+a p:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.20s
+}
+
+a:hover p:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.20s
+}
+
+a p:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.20s
+}
+
+a:hover p:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.20s;
+    transition-delay: 0.20s
+}
+
+a p:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.20s
+}
+
+a:hover p:nth-child(3) {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.20s;
+    transition-delay: 0.35s
+}
+
+a p:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom
+}
+
+a:hover p:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.20s;
+    transition-delay: 0.40s
+}
+
+a:hover {
+    transition: 0.25s;
+    transition-delay: 1s;
+    background: #FF5722
+}
+#about{
+    background-color: rgba(166, 172, 171, 0.714) ;
+}
+.wrapper {
+    height: 100vh;
+    background: #000;
+    background: url("https://i.imgur.com/g63vXfd.jpg");
+    background-size: cover;
+    width: 100%
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.contact-us {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+    color: #fff
+}
+
+.address {
+    margin-top: 14px !important;
+    margin-left: 10px
+}
+
+.address span {
+    color: #6c1591
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icons i {
+    font-size: 20px
+}
+
+.forms {
+    padding: 20px
+}
+
+.inputs input {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #8d5fa0;
+    box-shadow: none
+}
+
+.inputs textarea {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    resize: none
+}
+
+.inputs textarea:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #b784ce;
+    box-shadow: none;
+    resize: none
+}
+
+.form-control {
+    padding: .375rem .25rem
+}
+.bg-blue {
+    background-color: #fdfdfd
+}
+#dark{
+color: rgba(0, 0, 0, 0.8);
+
+}
+#darker{
+color: rgba(0, 0, 0, 0.8);
+}
